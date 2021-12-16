@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MediHome</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/ico1.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png '%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%  static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css'%} " rel="stylesheet">
+  <link href="{% static 'vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css'%} " rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab - v2.1.1
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class>
+  <button type="button" class="mobile-nav-toggle d-lg-none">
+    <i class="icofont-navigation-menu"></i>
+
+  </button>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:MediHome@gmail.com">medihome@gmail.com</a>
+        <i class="icofont-phone"></i> 9897753377
+        <i class="icofont-google-map"></i> Dillibazar, kathmandu
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">MediHome</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+           <li class="nav-item">
+                <a class="nav-link " data-toggle="tab" href="#home" style="font-size:17px ">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " data-toggle="tab" href="#about" style="font-size:17px ">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " data-toggle="tab" href="#benefits" style="font-size:17px ">Benefits</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " data-toggle="tab" href="#departments" style="font-size:17px ">Department</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " data-toggle="tab" href="#contact" style="font-size:17px ">Contact</a>
+              </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="#appointment" class="appointment-btn scrollto">Our services</a>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to MediHome</h1>
+      <h2>We are always here to provide medical services at your home. </h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose MediHome?</h3>
+              <p>
+                Online doctor services: provide online medical consultations and may issue prescriptions or arrange
+                medical tests. If they are based in England, and treat people in England, we register and regulate most
+                of them. However, some companies operate in a way that means that they fall outside of CQC’s scope of
+                regulation.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Best Doctors</h4>
+                    <p>Maka an appointment with the doctors you want</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Our work flow</h4>
+                    <p>Delivering the medicine and keeping the record of the patient.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Remember us</h4>
+                    <p>We hope you should noy have to use medicine.But if you need please remember us</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
+            <a href="" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>About us</h3>
+            <p>MEDIHOME solution is provided by group of students of Softwarica College of IT and Ecommerce. With a
+              technical team of experts, scientists in the field of health, economics, consulting and education support
+              to carry out research activities, applications and development of new technologies in the field of
+              medicine. International; support the provision of information and training in medical knowledge for
+              organizations and individuals according to the provisions of law..</p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Daily Services</a></h4>
+              <p class="description">Checking your health regularly can help you determine the state of your health,
+                what you can do improve it with time, and reduce any future risks.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Offers</a></h4>
+              <p class="description">Get an amazing discount after 5 appointments</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Health is wealth</a></h4>
+              <p class="description">If you are busy and your parents can't access to medicine.MediHome
+                is here for you.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="icofont-doctor-alt"></i>
+              <span data-toggle="counter-up">{{appoint}}</span>
+              <p>Appointment</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="icofont-patient-bed"></i>
+              <span data-toggle="counter-up">{{departcount}}</span>
+              <p>Departments</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-laboratory"></i>
+              <span data-toggle="counter-up">10</span>
+              <p>medicine</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-award"></i>
+              <span data-toggle="counter-up">150</span>
+              <p>Awards</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Benefits to family</h2>
+          <p>Our team of experienced, friendly doctors treat you in the comfort of your home. With Medihome, your family
+            will skip the traffic, long lines, and crowded waiting rooms. Each home doctor visit is, on average, 30
+            minutes long.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heart-beat"></i></div>
+              <h4><a href="">Periodic health check-ups</a></h4>
+              <p>Customer will get annual whole body checkup to assess your general health, personalize the routine care
+                and individual health plan by Medihome care professionals & specialists.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-drug"></i></div>
+              <h4><a href="">Improve your quality of life</a></h4>
+              <p>DThe treatment regimen will combine with counseling/orientation, lifestyle adjustments to support the
+                overall health care needs of the patient.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-dna-alt-2"></i></div>
+              <h4><a href="">Early Detection & Preventive health care</a></h4>
+              <p>This completely prevents the disease for people at risk. This is to identify risk factors or symptoms
+                of a disease.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heartbeat"></i></div>
+              <h4><a href="">Save cost & Reduce hospital readmission</a></h4>
+              <p>The treatment regimen will combine with counseling/orientation, lifestyle adjustments to support the
+                overall health care needs of the patient.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-disabled"></i></div>
+              <h4><a href="">Quick Access & Instant Connection with Doctors</a></h4>
+              <p>Use Medihome to connect directly with your doctor anytime, anywhere via FREE voice/video calls.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-autism"></i></div>
+              <h4><a href="">Remote monitoring & management</a></h4>
+              <p>The software of Medihome supports storing, synchronizing data from medical devices and updating history
+                of treatment to help patients and their relatives actively monitor.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="appointment" class="depart">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our services</h2>
+        </div>
+
+        <div class="row">
+
+           <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column ">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-10">Make Online Appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-20">Book Medicine</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-lg-12  mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show " id="tab-10">
+                <h3 class="text-center my-5">Patients Details</h3>
+                <form action="" method="POST" class="bg-light ">
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      {{form.fname|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4 ">
+                      {{form.lname|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4 ">
+                      {{form.phone|as_crispy_field}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      {{form.email|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4">
+                      {{form.gender|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4 col-sm-9">
+                      {{form.age|as_crispy_field}}
+                    </div>
+                  </div>
+                  <div class="book-sept-block clearfix">
+                    <h3 class="my-3">SCHEDULE INFORMATION</h3>
+                    <hr>
+                    <div class="book-form-block">
+                      <div class="row">
+
+                         <div class="col-md-4 col-sm-6 ">
+                          {{form.hospital|as_crispy_field}}
+                        </div>
+                        <div class="col-md-4 col-sm-6 ">
+                          {{form.department|as_crispy_field}}
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 ">
+                          {{form.date|as_crispy_field}}
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                          {{form.payment_method|as_crispy_field}}
+                        </div>
+
+
+                      </div>
+                      <p class="alert alert-success">Please Note: Appointment date and time requested would be confirmed
+                        back to you through email address.</p>
+
+                    </div>
+                    <div class="book-form-block">
+                      <div class="btn-grps">
+                        <input type="submit" class="btn btn-primary" value="submit"name="appointment">
+                        <input type="reset" class="btn btn-secondary" value="reset">
+                      </div>
+                    </div>
+                    <div class="book-sept-block clearfix">
+                      <div class="book-form-block">
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+              <div class="tab-pane  " id="tab-20">
+                <h3 class="text-center my-5">Patients Details</h3>
+                <form action="" method="POST" class="bg-light " novalidate>
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      {{forms.fname|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4 ">
+                      {{forms.lname|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4 ">
+                      {{forms.Phone|as_crispy_field}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      {{forms.Email|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4">
+                      {{forms.Gender|as_crispy_field}}
+                    </div>
+                    <div class="col-md-4 col-sm-9">
+                      {{forms.Age|as_crispy_field}}
+                    </div>
+                  </div>
+                  <div class="book-sept-block clearfix">
+                    <h3 class="my-3">SCHEDULE INFORMATION</h3>
+                    <hr>
+                    <div class="book-form-block">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 ">
+                          {{forms.Med_name|as_crispy_field}}
+                        </div>
+                        <div class="col-md-4 col-sm-6 ">
+                          {{forms.delivry_add|as_crispy_field}}
+                        </div>
+                        <div class="col-md-4 col-sm-6 ">
+                          {{forms.m_volume|as_crispy_field}}
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          {{forms.m_description|as_crispy_field}}
+                        </div>
+
+                      </div>
+                    <p class="alert alert-success">Please Note:Please Be ready with the cash at delivery time.</p>
+                    </div>
+                    <div class="book-form-block">
+                      <div class="btn-grps">
+                        <input type="submit" class="btn btn-primary" value="submit">
+                        <input type="reset" class="btn btn-secondary" value="reset">
+                      </div>
+                    </div>
+                    <div class="book-sept-block clearfix">
+                      <div class="book-form-block">
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+
+    <!--our services end -->
+
+
+
+
+
+
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Departments</h2>
+          <p>We provide you to the details of the each departments available in the hospitalsYou can makea request
+            according to the
+            departments available in the hospital.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Cardiology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Neurology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Hepatology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">Pediatrics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-5">Eye Care</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Cardiology</h3>
+                    <p>Cardiology is a branch of medicine that deals with the disorders of the heart as well as some
+                      parts of the circulatory system. The field includes medical diagnosis and treatment of congenital
+                      heart defects, coronary artery disease, heart failure, valvular heart disease and
+                      electrophysiology.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/departments-1.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Neurology</h3>
+
+                    <p>Neurology is a branch of medicine dealing with disorders of the nervous system.
+                      Neurology deals with the diagnosis and treatment of all categories of conditions and
+                      disease involving the central and peripheral nervous systems, including their coverings,
+                      blood vessels, and all effector tissue, such as muscle.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/departments-2.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hepatology</h3>
+
+                    <p>Hepatology is the branch of medicine that incorporates the study of liver, gallbladder, biliary
+                      tree, and pancreas as well as management of their disorders.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/departments-3.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Paediatrics</h3>
+
+                    <p>Paediatrics is the branch of medicine that involves the medical care of infants, children, and
+                      adolescents. The American Academy of Pediatrics recommends people seek pediatric care through the
+                      age of 21. In the United Kingdom, paediatrics covers patients until age 18.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/departments-4.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Eye Care</h3>
+                    <p class="font-italic">Your eyes are an important part of your health. Most people rely on their
+                      eyes to see and make sense of the world around them. But some eye diseases can lead to vision
+                      loss, so it is important to identify and treat eye diseases as early as possible. You should get
+                      your eyes checked as often as your health care provider recommends it, or if you have any new
+                      vision problems. And just as it is important to keep your body healthy, you also need to keep your
+                      eyes healthy.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/departments-5.jpg'%}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Doctors</h2>
+          <p>We are also planning to make a doctors available to your home for your services.Here are the list of the
+            famous doctors available for your services.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'img/doctors/bhagwan.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr.Bhagwan Koirala</h4>
+                <span> Cardiothoracic surgeon, professor</span>
+                <p>He is best known for leading the team of Nepalese surgeons that began Open-heart surgery in Nepal.
+                </p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic" style="height:80px;width:100px;"><img src="{% static 'img/doctors/bhola1.jpg'%}"
+                  class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Bhola Rijal</h4>
+                <span>Gynaecology,Infertility Specialist</span>
+                <p>He has expertise in In-vitro fertilization which helps against fertilization.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'img/doctors/sanduk.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr.Sanduk Ruit</h4>
+                <span>ophthalmologist </span>
+                <p>Sanduk Ruit is an ophthalmologist from Nepal who has restored the sight of over 130,000 people across
+                  Africa and Asia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic" style="height:80px;width:100px;"><img src="{% static 'img/doctors/ramesh.png'%}"
+                  class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr.Ramesh Chokani</h4>
+                <span>Senior Consultant Pulmonary</span>
+                <p>Associate Professor in Department of Medicine, Nepal Medical College</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint-->
+          <!--            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit-->
+          <!--            in iste officiis commodi quidem hic quas.</p>-->
+          <!--        </div>-->
+
+          <!--        <div class="faq-list">-->
+          <!--          <ul>-->
+          <!--            <li data-aos="fade-up">-->
+          <!--              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"-->
+          <!--                href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i-->
+          <!--                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>-->
+          <!--              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">-->
+          <!--                <p>-->
+          <!--                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur-->
+          <!--                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.-->
+          <!--                </p>-->
+          <!--              </div>-->
+          <!--            </li>-->
+
+          <!--            <li data-aos="fade-up" data-aos-delay="100">-->
+          <!--              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"-->
+          <!--                class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i-->
+          <!--                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>-->
+          <!--              <div id="faq-list-2" class="collapse" data-parent=".faq-list">-->
+          <!--                <p>-->
+          <!--                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id-->
+          <!--                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit-->
+          <!--                  ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.-->
+          <!--                </p>-->
+          <!--              </div>-->
+          <!--            </li>-->
+
+          <!--            <li data-aos="fade-up" data-aos-delay="200">-->
+          <!--              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"-->
+          <!--                class="collapsed">Dolor sit amet consectetur adipiscing elit? <i-->
+          <!--                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>-->
+          <!--              <div id="faq-list-3" class="collapse" data-parent=".faq-list">-->
+          <!--                <p>-->
+          <!--                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum-->
+          <!--                  integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.-->
+          <!--                  Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi-->
+          <!--                  quis-->
+          <!--                </p>-->
+          <!--              </div>-->
+          <!--            </li>-->
+
+          <!--            <li data-aos="fade-up" data-aos-delay="300">-->
+          <!--              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"-->
+          <!--                class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i-->
+          <!--                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>-->
+          <!--              <div id="faq-list-4" class="collapse" data-parent=".faq-list">-->
+          <!--                <p>-->
+          <!--                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc-->
+          <!--                  vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus-->
+          <!--                  gravida quis blandit turpis cursus in.-->
+          <!--                </p>-->
+          <!--              </div>-->
+          <!--            </li>-->
+
+          <!--            <li data-aos="fade-up" data-aos-delay="400">-->
+          <!--              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"-->
+          <!--                class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem-->
+          <!--                dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>-->
+          <!--              <div id="faq-list-5" class="collapse" data-parent=".faq-list">-->
+          <!--                <p>-->
+          <!--                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada-->
+          <!--                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis-->
+          <!--                  tellus in metus vulputate eu scelerisque.-->
+          <!--                </p>-->
+          <!--              </div>-->
+          <!--            </li>-->
+
+          <!--          </ul>-->
+          <!--        </div>-->
+
+          <!--      </div>-->
+          <!--    </section>&lt;!&ndash; End Frequently Asked Questions Section &ndash;&gt; -->
+
+          <!-- ======= Testimonials Section ======= -->
+          <section id="testimonials" class="testimonials">
+            <div class="container">
+
+              <div class="owl-carousel testimonials-carousel">
+
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="{% static 'img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Ram Kuikel</h3>
+                    <h4>Office,Worker</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      I have been registered Medihome
+                      by my daughter, and it has been a year now. The doctors examined and inquired very thoughtfully. I
+                      eat, drink, and exercise according to the doctor's instructions, so my health has been very good
+                      lately.
+                      Thanks Medihome very much.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="{% static 'img/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Sita Pyakurel</h3>
+                    <h4>Designer</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Medihome app is very reliable and convenient. I have registered to use it for me, my wife and my
+                      parents. From diet, activities to exercise and sports. The price is too reasonable compared to the
+                      quality of service. Everyone should experience this health care system.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="{% static 'img/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Hari luitel</h3>
+                    <h4>Store Owner</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="{% static 'img/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
+                    <h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                      minim
+                      dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="{% static 'img/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
+                    <h3>John Larson</h3>
+                    <h4>Entrepreneur</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
+                      culpa
+                      labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section><!-- End Testimonials Section -->
+
+          <!-- ======= Gallery Section ======= -->
+          <section id="gallery" class="gallery">
+            <div class="container">
+
+              <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Some of the glimses of our doctors performing surgery</p>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row no-gutters">
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-8.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static  'img/gallery/gallery-8.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-2.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static 'img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-3.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static 'img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-4.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static 'img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-5.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static 'img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-6.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static 'img/gallery/gallery-6.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static  'img/gallery/gallery-7.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{%  static 'img/gallery/gallery-7.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="{% static 'img/gallery/gallery-8.jpg' %}" class="venobox" data-gall="gallery-item">
+                      <img src="{% static 'img/gallery/gallery-8.jpg' %}" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section><!-- End Gallery Section -->
+
+          <!-- ======= Contact Section ======= -->
+          <section id="contact" class="contact">
+            <div class="container">
+
+              <div class="section-title">
+                <h2>Contact</h2>
+                <p>You can also directly contact to us by our website using below forms.Please let us know
+                  if you have any query</p>
+              </div>
+            </div>
+
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.359005886051!2d85.32785091411964!3d27.706199732151262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a74aa1f23%3A0x74ebef82ad0e5c15!2sSoftwarica%20College%20of%20IT%20%26%20E-Commerce!5e0!3m2!1sen!2snp!4v1627402400882!5m2!1sen!2snp"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="container">
+              <div class="row mt-5">
+
+                <div class="col-lg-4">
+                  <div class="info ">
+                    <div class="address">
+                      <i class="icofont-google-map"></i>
+                      <h4>Location:</h4>
+                      <p>Mahakavi Marga,Dillibazar,kathmandu</p>
+                    </div>
+
+                    <div class="email">
+                      <i class="icofont-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>medihome@gmail.com</p>
+                    </div>
+
+                    <div class="phone">
+                      <i class="icofont-phone"></i>
+                      <h4>Call:</h4>
+                      <p>+01442722</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+                  <div class="section-content">
+                    <form id="contact" action="mailto:bijenadhikari@gmail.com" method="POSt">
+                      {% csrf_token %}
+                      <div class="row">
+                        <div class="col-md-4 mb-3">
+                          <fieldset>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
+                              required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-4">
+                          <fieldset>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Your email..."
+                              required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-4">
+                          <fieldset>
+                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
+                              required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <fieldset>
+                            <textarea name="message" rows="6" class="form-control" id="message"
+                              placeholder="Your message..." required=""></textarea>
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <button type="submit" class="btn btn-primary">Send Message Now</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MediHome</h3>
+            <p>
+              Devkota Sadak <br>
+              Kathmandu,Napal<br>
+
+              <strong>Phone:</strong> +014129442<br>
+              <strong>Email:</strong> medihome@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>MediHome</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+          Designed by <a href="#">TeamAce</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js'%}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+  <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+    window.__be = window.__be || {};
+    window.__be.id = "611a96379b14030007cc863c";
+    (function() {
+        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+    })();
+</script>
+<!-- End of ChatBot code -->
+</body>
+
+</html>
